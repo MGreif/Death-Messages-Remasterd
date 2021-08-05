@@ -50,6 +50,7 @@ namespace Remastered.DeathMessages
         public string spark;
         public string boulder;
         public string usinga;
+        public string deathWithdrawalMessage;
         public int Head;
         public int Arm;
         public int Leg;
@@ -107,6 +108,7 @@ namespace Remastered.DeathMessages
             boulder = "was killed by a gigantic boulder!";
             usinga = "using a";
             messagecolour = "yellow";
+            deathWithdrawalMessage = "You died and lost";
             Head = 30;
             Body = 15;
             Arm = 5;

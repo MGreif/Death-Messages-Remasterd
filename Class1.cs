@@ -393,7 +393,7 @@ namespace Remastered.DeathMessages
                             if (Configuration.Instance.removeCoinsOnDeath != 0)
                             {
                                 Uconomy.Instance.Database.IncreaseBalance(player.CSteamID.ToString(), Configuration.Instance.removeCoinsOnDeath * -1);
-                                UnturnedChat.Say(player, "You died and lost" + " " + Configuration.Instance.removeCoinsOnDeath  + " " + Uconomy.Instance.Configuration.Instance.MoneyName + "!", Color.red);
+                                UnturnedChat.Say(player, Configuration.Instance.deathWithdrawalMessage + " " + Configuration.Instance.removeCoinsOnDeath  + " " + Uconomy.Instance.Configuration.Instance.MoneyName + "!", Color.red);
                             }
                             Uconomy.Instance.Database.IncreaseBalance(murderer3.CSteamID.ToString(), value);
                         };
