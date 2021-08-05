@@ -55,6 +55,7 @@ namespace Remastered.DeathMessages
         public int Leg;
         public int Body;
         public int Roadkill;
+        public int removeCoinsOnDeath;
         public uint ExpHead;
         public uint ExpBody;
         public uint ExpArm;
@@ -111,6 +112,7 @@ namespace Remastered.DeathMessages
             Arm = 5;
             Leg = 5;
             Roadkill = 10;
+            removeCoinsOnDeath = 25;
             ExpHead = 50u;
             ExpArm = 30u;
             ExpLeg = 30u;
